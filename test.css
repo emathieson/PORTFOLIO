@@ -1,0 +1,228 @@
+body {
+  font-family: "Roboto";
+
+}
+
+.sidebar {
+  background-color: rgb(51, 84, 97);
+  height: 100vh;
+  width: 250px;
+  position: absolute;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.4);
+  min-height: 600px;
+}
+
+#gradient {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(122, 135, 136, 0.4) 45%, rgba(78, 106, 107, 0.9) 55%);
+}
+
+#emily {
+  width: 130px;
+  border-radius: 65px;
+  margin-top: 17vh;
+  margin-bottom: 4vh;
+  border: solid #353535 3px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+}
+
+h2 {
+  font-family: "HammersmithOne";
+  color: #E5E5E5;
+  font-size: 22px;
+  text-shadow: 2px 4px 2px #3F3F3F;
+  letter-spacing: 1px;
+}
+
+#title {
+  font-size: 14px;
+  margin-bottom: 4vh;
+}
+
+#line1 {
+  text-align: center;
+  width: 60%;
+  margin-top: 7vh;
+  margin-bottom: 1vh;
+}
+
+h6 {
+  font-family: "HammersmithOne";
+  margin-top: 5vh;
+  text-align: center;
+  color: #E5E5E5;
+  font-size: 16px;
+  letter-spacing: 1px;;
+  text-shadow: 1px 2px 1px #3F3F3F;
+  transition: all 0.7s ease;
+}
+
+#projectsLink, #skillsLink {
+  color: #939e9e;
+}
+
+h6:hover {
+  cursor: pointer;
+  color: #E5E5E5 !important;
+}
+
+#icon {
+  width: 34px;
+  margin: 1vw;
+  margin-top: 10vh;
+}
+
+#icon:hover {
+  cursor: pointer;
+}
+
+.main {
+  position: absolute;
+  left: 250px;
+  height: 100vh;
+  width: calc(100vw - 250px);
+  background: linear-gradient(0deg, rgba(218, 219, 219, 0.4) 10%, rgba(213, 215, 216, 0.8) 100%);
+}
+
+
+h1 {
+  font-size: 50px;
+  font-family: "HammersmithOne";
+  margin-top: 10vh;
+  margin-bottom: 7vh;
+  color: #3F3F3F;
+  text-shadow: 2px 2px 4px #3f3f3f65;
+}
+
+#aboutMe {
+  position: absolute;
+  height: 100vh;
+  min-width: 800px;
+  z-index: 1;
+  opacity: 1;
+}
+
+#aboutMeTextRow {
+  text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#aboutMeText {
+  margin-top: 7vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  font-size: 14px;
+  color: #3F3F3F;
+}
+
+#projects {
+  position: absolute;
+  height: 100vh;
+  min-width: 800px;
+  z-index: 0;
+  opacity: 0;
+}
+
+#altH1 {
+  margin-bottom: 5vh;
+}
+
+h4 {
+  font-family: "HammersmithOne";
+  color: #3F3F3F;
+  font-size: 17px;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+#imgHolder {
+  text-align: right;
+}
+
+#projectImg {
+  text-align: right;
+  width: 90px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+  border: solid #353535 0px;
+}
+
+#projectText {
+  width: 300px;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+button {
+  margin: 5px;
+  margin-top: 2px;
+  width: 100px;
+  height: 22px;
+  border: none;
+  font-size: 11px;
+  color: #e5e5e5e5;
+  background-color: rgb(97, 107, 107);
+  border-radius: 4px;
+  letter-spacing: 2px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4); 
+  transition: all 0.7s ease;
+  font-family: "HammersmithOne";
+  padding: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #E5E5E5;
+  background-color: rgb(51, 61, 61);
+}
+
+#skills {
+  position: absolute;
+  height: 100vh;
+  min-width: 800px;
+  z-index: 0;
+  opacity: 0;
+}
+
+#skillsHeader {
+  margin-bottom: 12vh;
+}
+
+#skillsTextRow {
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#skillsText {
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 1vh;
+  margin-bottom: 6vh;
+  font-size: 14px;
+  color: #3F3F3F;
+}
+
+h3 {
+  font-family: "HammersmithOne";
+  color: #3F3F3F;
+  font-size: 16px;
+  margin: 0;
+  text-shadow: 2px 2px 4px #3f3f3f65;
+}
+
+#icon:hover {
+  animation: shake 0.3s;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 3px); }
+  50% { transform: translate(0px, -3px); }
+}
