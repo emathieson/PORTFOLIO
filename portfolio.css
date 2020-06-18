@@ -7,6 +7,10 @@ body {
   font-family: "Hammersmith One";
 }
 
+#hello, #mobileNav {
+  display: none;
+}
+
 /* HEADERS */
 h1 {
   color: #e0e0e0;
@@ -309,6 +313,110 @@ button:hover {
 }
 
 
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 600px) {
+  #left, #arrow {
+    display: none;
+  }
+
+  #hello {
+    display: block;
+    text-align: center;
+  }
+
+  #mobileNav {
+    display: block;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    height: 40px;
+  }
+
+  #mobile {
+    margin: 2vw;
+    font-size: 18px;
+    margin-top: 9px;
+  }
+
+  #helloHeader {
+    font-size: 44px;
+    padding-top: 24vh;
+  }
+
+  #emily {
+    width: 170px;
+    border-radius: 85px;
+    margin-top: 17vh;
+    margin-bottom: 6vh;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+ 
+  h2 {
+    font-size: 22px;
+  }
 
 
+  #section {
+    min-width: 0px;
+  }
+
+  #projectsHeader {
+    font-size: 34px;
+    margin-top: 30px;
+  }
+
+  #skillsHeader, #aboutHeader, #contactHeader {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+
+  #skillsText, #aboutText {
+    width: 80%;
+  }
+
+  h4 {
+    font-size: 22px;
+    margin-top: 14px;
+  }
+
+  #currentTitle {
+    font-size: 20px;
+  }
+
+  #right {
+    width: 100%;
+    padding: 0;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+
+  button {
+    width: 140px;
+    margin: 10px;
+    height: 40px;
+  }
+
+  #contactHeader {
+    margin-bottom: 80px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  #email {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+}
 
