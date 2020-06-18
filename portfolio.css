@@ -315,29 +315,17 @@ button:hover {
 
 /* RESPONSIVE CSS */
 @media only screen and (max-width: 600px) {
-  #left, #arrow {
+  #left {
     display: none;
+  }
+
+  #arrow {
+    left: 45%;
   }
 
   #hello {
     display: block;
     text-align: center;
-  }
-
-  #mobileNav {
-    display: block;
-    z-index: 999;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #333;
-    height: 40px;
-  }
-
-  #mobile {
-    margin: 2vw;
-    font-size: 18px;
-    margin-top: 9px;
   }
 
   #helloHeader {
@@ -390,20 +378,22 @@ button:hover {
   }
 
   #currentTitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #right {
     width: 100%;
-    padding: 0;
-    margin-right: 20px;
+    padding-left: 50px;
+    margin:0;
     margin-top: 5px;
   }
 
   button {
-    width: 140px;
-    margin: 10px;
-    height: 40px;
+    width: 100px;
+    margin: 6px;
+    height: 35px;
+    font-size: 10px;
+    margin-top: 0;
   }
 
   #contactHeader {
@@ -418,6 +408,7 @@ button:hover {
     font-size: 16px;
     margin-top: 40px;
   }
+
 
 }
 
