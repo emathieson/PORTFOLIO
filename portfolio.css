@@ -30,9 +30,9 @@ h6:hover {
 }
 
 #emily {
-  width: 14vw;
-  border-radius: calc(15vw /2);
-  margin-top: 10vh;
+  width: 150px;
+  border-radius: 75px;
+  margin-top: 14vh;
   margin-bottom: 20vh;
   border: solid 4px #333;
   box-shadow: 0px 4px 4px #4E7072;
@@ -61,6 +61,7 @@ h2 {
 
 #arrow {
   position: absolute;
+  left: 50%;
   bottom: 40px;
   opacity: 30%;
   width: 40px;
@@ -96,6 +97,11 @@ h2 {
     top: 0;
     width: 100%;
   }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + #projects {
+  padding-top: 30px;
+}
   
   #projects, #skills, #about, #contact {
     min-height: 100vh;
@@ -124,6 +130,10 @@ h2 {
     margin-top: 5vh;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     min-width: 800px;
+  }
+
+  #projectsHeader {
+    margin-bottom: 40px;
   }
 
   #imgPort {
