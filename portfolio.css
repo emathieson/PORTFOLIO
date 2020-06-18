@@ -2,10 +2,46 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   overflow-x: hidden;
   font-family: "Hammersmith One";
+}
+
+/* HEADERS */
+h1 {
+  color: #e0e0e0;
+  font-size: 5.5vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 3px;
+}
+
+h2 {
+  color: #e0e0e0;
+  font-size: 3vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+  margin: 15vh;
+  color: #e0e0e0;
+  font-size: 5.5vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 3px;
+}
+
+h4 {
+  margin-top: 30px;
+  color: #e0e0e0;
+  font-size: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 3px;
+}
+
+h5 {
+  color: #bbbbbb;
+  font-size: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 3px;
 }
 
 h6 {
@@ -23,10 +59,10 @@ h6:hover {
 }
 
 #home {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("./background.png");
-    background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./background.png");
+  background-size: cover;
 }
 
 #emily {
@@ -36,27 +72,6 @@ h6:hover {
   margin-bottom: 20vh;
   border: solid 4px #333;
   box-shadow: 0px 4px 4px #4E7072;
-}
-
-h1 {
-  color: #e0e0e0;
-  font-size: 5.5vw;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  letter-spacing: 3px;
-}
-
-h2 {
-  color: #e0e0e0;
-  font-size: 3vw;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#scroll {
-  color: #e0e0e0;
-  position: absolute;
-  bottom: 60px;
-  opacity: 0%;
-  font-size: 14px;
 }
 
 #arrow {
@@ -75,208 +90,174 @@ h2 {
 }
 
 #navbar {
-    overflow: hidden;
-    background-color: #333;
-    height: 40px;
-    z-index: 999;
+  overflow: hidden;
+  background-color: #333;
+  height: 40px;
+  z-index: 999;
+}
+  
+#navbar a {
+  float: none;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  margin-right: 28px;
+  text-decoration: none;
+  padding-top: 4px;
   }
   
-  #navbar a {
-    float: none;
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    margin-right: 28px;
-    text-decoration: none;
-    padding-top: 4px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + #projects {
   padding-top: 30px;
 }
   
-  #projects, #skills, #about, #contact {
-    min-height: 100vh;
-  }
+#projects, #skills, #about, #contact {
+  min-height: 100vh;
+}
 
-  #projects, #about {
-    background-color: #4E7072;
-  }
+#projects, #about {
+  background-color: #4E7072;
+}
 
-  #skills, #contact {
-    background: #455859;
-  }
+#skills, #contact {
+  background: #455859;
+}
 
-  h3 {
-    margin: 15vh;
-    color: #e0e0e0;
-    font-size: 5.5vw;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    letter-spacing: 3px;
-  }
+#section {
+  background: #405C5E;
+  height: 210px;
+  border-radius: 4px;
+  margin-top: 5vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  min-width: 800px;
+}
 
-  #section {
-    background: #405C5E;
-    height: 210px;
-    border-radius: 4px;
-    margin-top: 5vh;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    min-width: 800px;
-  }
+#projectsHeader {
+  margin-bottom: 40px;
+}
 
-  #projectsHeader {
-    margin-bottom: 40px;
-  }
+#imgPort {
+  width: 200px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-  #imgPort {
-    width: 200px;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+#left {
+  text-align: right;
+  padding-right: 5vw;
+}
 
-  h4 {
-    margin-top: 30px;
-    color: #e0e0e0;
-    font-size: 20px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    letter-spacing: 3px;
-  }
+#right {
+  padding-right: 15vw;
+}
 
-  #left {
+button {
+  border: none;
+  background-color: rgb(50, 50, 59);
+  color: #e0e0e0;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 110px;
+  border-radius: 2px;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+}
 
-    text-align: right;
-    padding-right: 5vw;
-  }
+button:hover {
+  cursor: pointer;
+  transform: translateY(2px);
+  background-color: #e0e0e0;
+  color: #333;
+}
 
-  #right {
+#currentTitle {
+  font-size: 1.7vw;
+}
 
-    padding-right: 15vw;
+#current {
+  width: 200px;
+}
 
-  }
+#descriptText, #languageText, #skillsText, #aboutText {
+  text-align: center;
+  font-family: "Roboto";
+  color: #e0e0e0;
+  font-size: 11px;;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+}
 
-  button {
-    border: none;
-    background-color: rgb(50, 50, 59);
-    color: #e0e0e0;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 110px;
-    border-radius: 2px;
-    font-size: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: all 0.5s ease;
-    letter-spacing: 1px;
-  }
+#descriptText {
+  width: 300px;
+}
 
-  button:hover {
-    cursor: pointer;
-    transform: translateY(2px);
-    background-color: #e0e0e0;
-    color: #333;
-  }
+#langageText {
+  font-weight: bold;
+}
 
-  #currentTitle {
-    font-size: 1.7vw;
-  }
+#skillsHeader, #aboutHeader {
+  margin-bottom: 5vh;
+  margin-top: 12vh;
+}
 
-  #current {
-    width: 200px;
-  }
-  #descriptText, #languageText, #skillsText, #aboutText {
-    text-align: center;
-    font-family: "Roboto";
-    color: #e0e0e0;
-    font-size: 11px;;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    letter-spacing: 1px;
-  }
+#skillsHeader2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 3vh;
+}
 
-  #descriptText {
-    width: 300px;
-  }
-  #langageText {
-    font-weight: bold;
-  }
+#skillsText, #aboutText {
+  width: 60%;
+}
 
-  #skillsHeader, #aboutHeader {
-    margin-bottom: 5vh;
-    margin-top: 12vh;
-  }
+#skillsText {
+  font-size: 12px;
+}
 
-  #skillsHeader2 {
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-top: 3vh;
-  }
+#aboutText {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
-  #skillsText, #aboutText {
-    width: 60%;
-  }
+#email {
+  color: #e0e0e0;
+  margin-top: 20px;
+  font-size: 22px;
+}
 
-  #skillsText {
-    font-size: 12px;
-  }
+#icon {
+  margin-top: 100px;
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-  #aboutText {
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
+#icon:hover {
+  cursor: pointer;
+  animation: bounce 0.3s;
+}
 
-  h5 {
-    color: #bbbbbb;
-    font-size: 20px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    letter-spacing: 3px;
-  }
+@keyframes bounce {
+  0% { transform: translate(0px, 2px); }
+  50% { transform: translate(0px, -1px); }
+}
 
-  #email {
-    color: #e0e0e0;
-    margin-top: 20px;
-    font-size: 22px;
-  }
-
-  #icon {
-    margin-top: 100px;
-    width: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  #icon:hover {
-    cursor: pointer;
-    animation: bounce 0.3s;
-  }
-
-
-
-
-  @keyframes bounce {
-    0% { transform: translate(0px, 2px); }
-    50% { transform: translate(0px, -1px); }
-  }
-
-  
-/* 
-  You want a simple and fancy tooltip?
-  Just copy all [data-tooltip] blocks:
-*/
+/* TOOLTIP*/
 [data-tooltip] {
   position: relative;
   z-index: 10;
   font-family: "Roboto";
 }
 
-/* Positioning and visibility settings of the tooltip */
 [data-tooltip]:before,
 [data-tooltip]:after {
   position: absolute;
@@ -289,7 +270,6 @@ h2 {
   will-change: transform;
 }
 
-/* The actual tooltip with a dynamic width */
 [data-tooltip]:before {
   content: attr(data-tooltip);
   padding: 8px 8px;
@@ -312,27 +292,22 @@ h2 {
   transform: translate(-50%, -5px) scale(0.5);
 }
 
-
-/* Tooltip becomes visible at hover */
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
   visibility: visible;
   opacity: 1;
 }
-/* Scales from 0.5 to 1 -> grow effect */
 [data-tooltip]:hover:before {
   transition-delay: 0.3s;
   transform: translate(-50%, -5px) scale(1);
 }
-/* Slide down effect only on mouseenter (NOT on mouseleave) */
+
 [data-tooltip]:hover:after {
-  transition-delay: 0.5s; /* Starting after the grow effect */
+  transition-delay: 0.5s; 
   transition-duration: 0.2s;
   transform: translateX(-50%) scaleY(1);
 }
-/*
-  That's it.
-*/
+
 
 
 
