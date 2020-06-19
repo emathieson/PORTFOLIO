@@ -295,7 +295,7 @@ ul {
 [data-tooltip]:before {
   content: attr(data-tooltip);
   padding: 8px 8px;
-  min-width: 50px;
+  min-width: 60px;
   max-width: 300px;
   width: max-content;
   width: -moz-max-content;
