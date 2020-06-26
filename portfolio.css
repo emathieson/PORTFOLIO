@@ -184,6 +184,8 @@ button:hover {
   color: #333;
 }
 
+
+
 #currentTitle {
   font-size: 18px;
 }
@@ -328,6 +330,16 @@ ul {
   transition-delay: 0.5s; 
   transition-duration: 0.2s;
   transform: translateX(-50%) scaleY(1);
+}
+
+
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 1198px) {
+#new, #old, #code {
+  width: 105px;
+  margin: 10px;
+}
 }
 
 
