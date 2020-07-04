@@ -216,6 +216,10 @@ button:hover {
   margin-top: 12vh;
 }
 
+#skillsHeader {
+  margin-bottom: 2vh;
+}
+
 #skillsHeader2 {
   font-size: 20px;
   letter-spacing: 1px;
@@ -236,7 +240,7 @@ ul {
 }
 
 #skillsText {
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: #c7c7c7;
 }
 
@@ -247,7 +251,7 @@ ul {
 
 
 #aboutText {
-  font-size: 1vw;
+  font-size: 1.4vw;
   margin-top: 20px;
   margin-bottom: 30px;
 }
